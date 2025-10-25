@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "AIRemover",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/search?q=*"],
+            "js": ["Content.js"]
+        }
+    ]
+}
