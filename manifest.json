@@ -3,8 +3,8 @@
     "name": "AIRemover",
     "version": "1.0.0",
     "content_scripts": [
-        {
-            "matches": ["https://www.google.com/search?q=*"],
+        {   "run_at": "document_start",
+            "matches": ["https://www.google.com/search*", "https://search.brave.com/search*"],
             "js": ["Content.js"]
         }
     ]
